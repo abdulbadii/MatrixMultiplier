@@ -17,8 +17,8 @@ mul(){ ##### BEGINNING OF mul, matrix multiplier #####
 	for((r=0;r<$R;r++)){
 		for((c=0;c<$C;c++)){	echo -n ${arr[r*$C+c]}\ ;}
 		echo;}
-}
-rot(){
+} ##### ENDING OF mul, matrix #####
+rot(){ ##### BEGINNING OF rot, rotation matrix #####
 	local -n arr1=$1; p=3.1415926535898
 	P=$3;D=$2
 	[ -z "$P" ] &&{
