@@ -1,5 +1,5 @@
-Copy the **MatrixMultiplier.sh** to ~/.bashrc by clicking it, select all and copy functions inside then paste it into ~/.bashrc
-Bash function to perform matrix multiplication with argument the two matrix in array data format and an option to set the number of precision on command line, and the other is to rotate 2D of a set of cartesian pairs.
+Copy the **MatrixMultiplier.sh** to ~/.bashrc by clicking it, select all and copy functions inside then paste it into ~/.bashrc   
+**mul** is Bash function performing matrix multiplication with argument the two matrix in array data format and an option to set the number of precision on command line, and the other is to rotate 2D of a set of cartesian pairs.
 
 ## Requirement  
   - `bash` (tested or developed using version 5)
