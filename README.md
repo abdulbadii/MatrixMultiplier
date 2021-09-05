@@ -1,13 +1,12 @@
 Copy the **MatrixMultiplier.sh** to ~/.bashrc by clicking it, select all and copy functions inside then paste it into ~/.bashrc   
-**mul** is Bash function performing matrix multiplication with argument the two matrix in array data format and an option to set the number of precision on command line, and the other is to rotate 2D of a set of cartesian pairs.
+**mul** is Bash function performing matrix multiplication with argument the two matrix in array data format and an option to set the number of precision on command line, and the other is to rotate 2D of a set of cartesian pairs.  
 
 ## Requirement  
-  - `bash` (tested or developed using version 5)
-  - `bc` (Linux basic calculator utility, 1.07)
-
+  - `bash` (tested or developed using version 5)  
+  - `bc` (Linux basic calculator utility, 1.07)   
 
 ## Uses
-1. mul
+1. **mul**
 
   $ a=(4 2.5, 1 1); b=(1 2 2, 4 6 2)   
   $ mul a b   
@@ -31,23 +30,23 @@ the matrix result will have no digit behind decimal point:
 
 the result having 1 digit behind decimal point   
 
-2. rot
-rot i.e. rotate on plane, just uses specific second matrix that is a rotation one :
+2. **rot**   
+rot i.e. rotate on plane, just uses specific second matrix that is a rotation one:  
 
-**( cos -sin )
-( sin cos )
-**
+**( cos -sin )   
+( sin cos )**
 
-  $ a=(0 -32, 0 -12, 7 9);
+  $ a=(0 -32, 0 -12, 7 9);   
   $ rot a 
-  Rotated by 45 degree based on cartesian system (counter clockwise)
+  Rotated by 45 degree based on cartesian system (counter clockwise) 
   -23 -23 
   -8 -8 
   11 1
 
 If no degree of rotation is specified, it'd default to 45   
 
-  $ a=(0 -32, 0 -12, 7 9) ; rot a 70 2
+  $ a=(0 -32, 0 -12, 7 9)
+  rot a 70 2
   Rotated by 70 degree based on cartesian system (counter clockwise)
   -30.07 -10.94 
   -11.28 -4.10 
