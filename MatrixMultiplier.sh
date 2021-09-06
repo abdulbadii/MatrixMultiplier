@@ -18,19 +18,18 @@ mul(){ ##### BEGINNING OF mul, matrix multiplier #####
 		for((c=0;c<$C;c++)){	echo -n ${arr[r*$C+c]}\ ;}
 		echo;}
 } ##### ENDING OF mul, matrix #####
-rot(){ ##### BEGINNING OF rot, rotation matrix #####
-	local -n arr1=$1; p=3.1415926535898
-	P=$3;D=$2
-	[ -z "$P" ] &&{
-		if [[ "$2" = P=[0-9]* ]] ;then P=${2#P=};D=45
+rot(){ ##### BEGINNING OF rot, rotation #####
+	local -n arr1=$1; P=3.1415926535898
+	p=${3#p=};D=$2
+	[ -z "$p" ] &&{
+		if [[ "$2" = p=[0-9]* ]] ;then p=${2#p=};D=45
 		else
-			P=0
+			p=0
 			if [ "$2" = - ] ;then D=-45
-			elif [ "$2" ] ;then D=$2
-			else D=45;fi
+			elif [ -z "$2" ] ;then D=45;fi
 		fi
 	}
-	d=`bc -l<<<"$D/180*$p"`
+	d=`bc -l<<<"$D/180*$P"`
 	cos=`bc -l<<<"c($d)"`
 	sin=`bc -l<<<"s($d)"`
 	minsin=`bc -l<<<"-1*$sin"`
@@ -44,9 +43,9 @@ rot(){ ##### BEGINNING OF rot, rotation matrix #####
 		for((c=0;c<$C;c++)){	M=0
 			for((cr=0;cr<$CR;cr++)){
 				M=`bc<<<"$M+${arr1[r*CR+cr]}*${arr2[cr*C+c]}"`;}
-			printf -v arr[r*C+c] %.${P}f $M
+			printf -v arr[r*C+c] %.${p}f $M
 };}
-echo "Rotated by $D degree based on cartesian system (counter clockwise)"
+echo "Rotated by $D degree based on cartesian system (counter clockwise):"
 	for((r=0;r<$R;r++)){
 		for((c=0;c<$C;c++)){	echo -n ${arr[r*$C+c]}\ ;}
 		echo;}
