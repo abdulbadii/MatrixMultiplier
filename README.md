@@ -31,7 +31,7 @@ the matrix result will have no digit behind decimal point:
 the result having 1 digit behind decimal point   
 
 2. **rot**   
-rot i.e. rotate on plane, just uses specific second matrix that is a rotation one:  
+rot means rotate on plane, just uses function code with specific second matrix that is a rotation one:  
 
 **( cos -sin )   
 ( sin cos )**
@@ -45,9 +45,9 @@ rot i.e. rotate on plane, just uses specific second matrix that is a rotation on
 
 If no degree of rotation is specified, it'd default to 45   
 
-  $ a=(0 -32, 0 -12, 7 9)
-  rot a 70 2
-  Rotated by 70 degree based on cartesian system (counter clockwise)
+  $ a=(0 -32, 0 -12, 7 9)   
+  rot a 70 2   
+  Rotated by 70 degree based on cartesian system (counter clockwise)   
   -30.07 -10.94 
   -11.28 -4.10 
   10.85 -3.50 
