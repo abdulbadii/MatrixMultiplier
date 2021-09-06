@@ -62,10 +62,12 @@ If no degree of rotation is specified, it'd default to 45
 ```
 
 the last argument, 2, is number of precision digit behind decimal point  
-To specify it for the default 45 degree so always not typing the **45** :
-```$ p=2 rot a```
-or
-```$ rot a p=2```
+To specify it for the default 45 degree so always not typing the **45**:   
+```$ p=2 rot a```   
+or   
+```$ rot a p=2```   
 
-not ```$ rot a 2``` as the second argument is always assumed as the angle degree
+not   
+```$ rot a 2```   
+as the second argument is always assumed as the angle degree
 
