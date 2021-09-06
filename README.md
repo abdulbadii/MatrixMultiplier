@@ -16,8 +16,10 @@ Copy the **MatrixMultiplier.sh** to ~/.bashrc by clicking it, select all and cop
  ```   
 
 Notice the comma delimiting each row, it's multiplying matrixes:   
-( 4 2.5)   ( 1 2 2 )   
-( 1  1 )   ( 4 6 2 )   
+```
+$$\begin{pmatrix}4 & 2.5\\\1 & 1\end{pmatrix}$$
+$$\begin{pmatrix}1 & 2 & 2\\\4 & 6 &2\end{pmatrix}$$
+```
 
 the matrix result will have no digit behind decimal point:   
 
