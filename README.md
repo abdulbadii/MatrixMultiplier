@@ -8,7 +8,8 @@ Copy the **MatrixMultiplier.sh** to ~/.bashrc by clicking it, select all and cop
 ## Uses
 1. **mul**
 
-```$ a=(4 2.5, 1 1); b=(1 2 2, 4 6 2)   
+```
+  $ a=(4 2.5, 1 1); b=(1 2 2, 4 6 2)   
   $ mul a b   
   4 23 13   
   5 8 4
@@ -23,12 +24,13 @@ the matrix result will have no digit behind decimal point:
 ( 4 23 13 )   
 ( 5  8   4  )  
 
-```$ a=(4.1 2.5,1.7 1); b=(1 2 2, 4 6 2)
+```
+  $ a=(4.1 2.5,1.7 1); b=(1 2 2, 4 6 2)
   $ mul a b 1
 
   14.1 23.2 13.2   
   5.7 9.4 5.4
-  ```
+```
 
 the result having 1 digit behind decimal point   
 
@@ -38,7 +40,8 @@ rot, means rotate on plane, just uses the function code with specific second mat
 **( cos -sin )   
 ( sin  cos )**
 
-```$ a=(0 -32, 0 -12, 7 9);   
+```
+  $ a=(0 -32, 0 -12, 7 9);   
   $ rot a  
   Rotated by 45 degree based on cartesian system (counter clockwise)  
   -23 -23  
@@ -48,7 +51,8 @@ rot, means rotate on plane, just uses the function code with specific second mat
 
 If no degree of rotation is specified, it'd default to 45   
 
-```$ a=(0 -32, 0 -12, 7 9)   
+```
+  $ a=(0 -32, 0 -12, 7 9)   
   $ rot a 70 2   
   Rotated by 70 degree based on cartesian system (counter clockwise)   
   -30.07 -10.94  
