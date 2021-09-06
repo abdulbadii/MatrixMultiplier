@@ -37,8 +37,8 @@ rot means rotate on plane, just uses function code with specific second matrix t
 ( sin cos )**
 
   $ a=(0 -32, 0 -12, 7 9);   
-  $ rot a 
-  Rotated by 45 degree based on cartesian system (counter clockwise) 
+  $ rot a  
+  Rotated by 45 degree based on cartesian system (counter clockwise)  
   -23 -23 
   -8 -8 
   11 1
