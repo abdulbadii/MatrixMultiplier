@@ -15,15 +15,15 @@ Copy the **MatrixMultiplier.sh** to ~/.bashrc by clicking it, select all and cop
   5 8 4
  ```   
 
-Notice the comma delimiting each row, it's multiplying matrixes:   
+Notice the comma delimiting each row, its matrix multiplying form:    
 
-( 4  2.5)   (1  2  2 ) 
-( 1  1   )   (4  6  2 )   
+`( 4  2.5)    (1  2  2 )`    
+`( 1  1  )    (4  6  2 )`   
 
-the matrix result will have no digit behind decimal point:   
+the matrix result has no digit behind the decimal point:   
 
-( 4 23 13 )   
-( 5  8   4  )  
+`( 4 23 13 )`   
+`( 5  8  4  )`  
 
 ```
   $ a=(4.1 2.5,1.7 1); b=(1 2 2, 4 6 2)
@@ -33,7 +33,7 @@ the matrix result will have no digit behind decimal point:
   5.7 9.4 5.4
 ```
 
-the result having 1 digit behind decimal point   
+Notice **1** after ```mul a b```, so the result should have 1 digit behind decimal point   
 
 2. **rot**   
 rot, means rotate on plane, just uses the function code with specific second matrix that is a rotation one:  
@@ -61,4 +61,13 @@ If no degree of rotation is specified, it'd default to 45
   10.85 -3.50
 ```
 
-the last argument, 2, is number of precision digit behind decimal point 
+the last argument, 2, is number of precision digit behind decimal point  
+To specify it for the default 45 degree so always not typing the **45**:   
+```$ p=2 rot a```   
+or   
+```$ rot a p=2```   
+
+not   
+```$ rot a 2```   
+as the second argument is always assumed as the angle degree
+
